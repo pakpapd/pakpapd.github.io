@@ -1,0 +1,100 @@
+#background {
+  background: url(https://i.ytimg.com/vi/UNOmaFs6KaY/maxresdefault.jpg);
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px 10px 0px;
+}
+
+#title {
+  color: white;
+  /* background-color:#0A59A6; */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlePic {
+  height: 50px;
+}
+
+#titleWord {
+  margin: 0 5px;
+  font-size: 4rem;
+  font-family: lobster;
+  font-weight: 100;
+  overflow-wrap: break-words;
+}
+
+#gallery {
+  background-color: rgb(255,255,255,.3);
+  width: 85%;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.photobox {
+  color: white;
+  width:50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 97%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 7%;
+  border-color: rgb(255, 228, 222);
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.photo:hover{
+  border-color: rgb(255, 253, 136);
+  border-width: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .photobox {
+    width: 50%;
+  }
+  #titleWord {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .photobox {
+    width: 100%;
+  }
+  .titlePic {
+    display: none;
+  }
+}
+
+@media (max-width: 325px) {
+  #titleWord {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:995px){
+  .photobox {
+    color: white;
+    width:95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
